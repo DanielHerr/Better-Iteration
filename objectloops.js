@@ -1,5 +1,6 @@
-var objectlooptype = "both"
+"use strict"
 
+var objectlooptype = "both"
 Object.prototype[Symbol.iterator] = function() {
  const object = this
  const keys = Object.keys(object)
