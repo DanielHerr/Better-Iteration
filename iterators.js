@@ -2,7 +2,7 @@
 
 Object.prototype[Symbol.iterator] = function*() {
  for(let key of Object.keys(this)) {
-  yield({ key: key, value: this[key] })
+  yield({ key, value: this[key] })
 } }
 
 Number.prototype[Symbol.iterator] = function*() {
