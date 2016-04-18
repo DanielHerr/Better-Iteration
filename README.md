@@ -1,12 +1,15 @@
-# Iterators
-Allows objects and numbers to be used in for..of loops.
+# Loop
+Enables iteration of objects and numbers in for..of loops, and enhances array iteration.
 
 Usage:
 ```
-for(let property of { object: true, testing: true }) {
- console.log(property.key, property.value)
+for(let [ key, value, original ] of loop({ done: false, testing: true })) {
+ console.log(key, value, original)
 }
-for(let number of 4) {
- console.log(number)
+for(let [ value, index, original ] of loop([ "done", "testing" ])) {
+ console.log(value, index, original)
+}
+for(let [ number, original ] of loop(4)) {
+ console.log(number, original)
 }
 ```
