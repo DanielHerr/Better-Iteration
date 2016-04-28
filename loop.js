@@ -1,6 +1,6 @@
 "use strict"
 
-function*loop(item, type) {
+function*loop(item, type = "") {
  let itemtype = type || typeof(item)
  if(itemtype == "object" && Array.isArray(item)) {
   itemtype = type || "array"
