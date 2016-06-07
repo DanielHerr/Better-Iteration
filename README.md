@@ -1,5 +1,5 @@
 # Loop
-Enables iteration of objects, functions, and numbers in for..of loops, and enhances array and string iteration. Iteration method can be specified as second argument. Otherwise the default [Symbol.iterator] will be used.
+Enables iteration of objects, functions, and numbers in for..of loops, and enhances array and string iteration. Otherwise the default [Symbol.iterator] will be used. Iteration method can be specified as second argument. Iteration of inherited properties can be disabled using false as the third argument.
 
 Usage:
 ```
